@@ -96,17 +96,18 @@ class Client {
                         int choice = sc.nextInt();
                         sc.nextLine();
                         outToServer.writeInt(choice);
+                        System.out.println(choice);
                         if (choice == 1) {
                             System.out.println("-----------------------------------------------------------");
                             print_shop();
                             System.out.println();
                         }
                         else if (choice == 2) {
-                            //System.out.println("Item name -");
+                            System.out.println("Item name -");
                             String name = sc.nextLine();
                             outToServer.writeUTF(name);
 
-                            //System.out.println("Item cost -");
+                            System.out.println("Item cost -");
                             double cost = sc.nextDouble();
                             sc.nextLine();
                             outToServer.writeDouble(cost);

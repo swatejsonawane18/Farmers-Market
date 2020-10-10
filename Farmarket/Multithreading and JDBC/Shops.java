@@ -166,7 +166,7 @@ public class Shops{
 //                System.out.println();
 //                System.out.println("Enter your choice - ");
                 ch = inFromClient.readInt();
-
+             System.out.println(ch);
                 if (ch == 1) {
                     view_database(shopid,category);
                 } else if (ch == 2) {

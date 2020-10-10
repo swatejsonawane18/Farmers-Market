@@ -112,7 +112,7 @@ class ThreadServer extends Thread {
 
                         query = "SELECT username FROM server_database WHERE username='" + user + "' and usertype='Customer';";
                         rs = Database.executeQuery(query);
-                        System.out.println(rs.next());
+                        //System.out.println(rs.next());
                         if (rs.next()) {
 
                             outToClient.writeInt(1);
